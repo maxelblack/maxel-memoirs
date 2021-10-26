@@ -1,0 +1,117 @@
+# Copyright © 2021 Maxel Black
+# Source code under MIT License
+
+# 网页信息
+
+name: "Maxel Memoirs" # 站点名称（显示在除首页以外的页面顶部）
+title: "Maxel Memoirs" # 站点标题（显示在首页和网页标题上），Jekyll 自带属性
+author: "Maxel Black" # 站点作者名，Jekyll 自带属性
+description: "Memoirs Jekyll theme modified by Maxel Black" # 站点描述，Jekyll 自带属性
+introduction: "A simple but powerful Jekyll theme." # 站点简介（显示在首页底部，若不需要可空置，千万不要注释掉这个属性否则你的首页底部会很难看）
+logo: '/assets/images/avatar_360px.jpg' # 站点 Logo
+favicon: '/favicon.ico' # 浏览器 Favicon
+url: 'https://blog.maxelbk.ml' # 站点根 URL，如 https://github.com/maxelblack 此处应填 "https://github.com" （不要加上末尾的 "/"）
+baseurl: # 站点子目录 URL，如 https://github.com/maxelblack 此处应填 "/maxelblack" （开头加 "/"）
+permalink: /article/:title.html # 永久链接，详见 Jekyll 官方文档
+#email: # 站点 E-Mail
+#google_site_verification: "" # Google Search Console 的网页认证代码（若不需要可空置）
+lisence: '<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>' # 版权许可说明，请直接写 HTML 源码
+#mailchimp-list: # 原主题自带的一个属性，我也不知道有什么作用，若不需要可空置
+
+# 基本配置
+
+excerpt_separator: "<!-- more -->" # 简介说明分隔符 ，默认为 <!-- more --> （注意中间的两个空格）
+
+## 评论系统（二选一，不用的注释掉，否则页面底部会出现两个评论区）
+### Disqus
+#disqus:
+#  id: 'default' # Disqus ID，如 default.disqus.com 则需填 "default"
+### Twikoo（详见官方文档 https://twikoo.js.org）
+twikoo:
+  envId: 'https://example.twikoo.js.org' # 环境 ID
+  lang: 'zh-CN' # 语言
+  region: 'ap-shanghai' # 环境地域
+
+encoding: UTF-8 # 网页文件编码
+#highlighter: none
+markdown: kramdown
+
+## Internet Explorer 检查
+ie_check:
+  message: '本站对IE浏览器仅保证最小兼容，请尽可能使用 <a href=\"https://www.google.com/chrome\">Chrome</a> 等现代浏览器访问' # 提示信息（显示在所有页面顶部）
+  comment: '评论系统暂不支持IE浏览器' # 评论提示，显示在评论区（Disqus 实证支持 IE 11 ，若使用 Disqus 请注释掉 comment 属性）
+
+# 作者信息（会显示在作者页面）
+
+authors:
+  maxelbk:
+    name: "Maxel Black"
+    display_name: "Maxel Black"
+    avatar: 'assets/images/avatar.jpg'
+    email: "maxelblack@outlook.com"
+    twitter: "https://twitter.com/maxelbk"
+    description: "A senior high student who loves coding."
+    introduction: "Java developer | ARCH YES | Minecraft player | DP7 admin | from China"
+
+# 插件设置
+
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name.html'
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# 其他配置
+
+paginate: 6 # 每页显示文章数
+paginate_path: /p:num.html # 第 2+ 页的链接格式
+
+## 侧栏导航项
+navigation:
+  - name: "Home"
+    url: /
+    tip: "主页"
+  - name: "About"
+    url: /page/about.html
+    tip: "关于网站"
+  - name: "Authors"
+    url: /page/authors.html
+    tip: "作者"
+  - name: "Categories"
+    url: /page/categories.html
+    tip: "文章分类"
+  - name: "RSS Feed"
+    url: /feed.xml
+    tip: "订阅"
+
+include: ["_pages"]
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+# Google Analytics （改为 "enable" 以启用，同时需要填入你的 ID）
+google_analytics: "disabled"
+google_analytics_id:
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot.)
+# Create a new ad unit from your Adsense account to get the slot.
+adsense: "disabled"
+adsense-data-ad-client:
+adsense-data-ad-slot:
+
+# 图片懒加载（"enabled" or "disabled"）
+lazyimages: "enabled"
+
+# 文章底部的作者信息框 （"enabled" or "disabled"）
+authorbox: "enabled"
