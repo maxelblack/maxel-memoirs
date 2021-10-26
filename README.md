@@ -21,3 +21,29 @@
 - [ ] 支持更多评论系统
 - [ ] Live Demo 网页
 - [ ] 更完善的使用和修改说明
+
+## 风格截图（其实这就是我博客用的上一个主题）
+
+首页
+
+![image](https://user-images.githubusercontent.com/61044187/138913021-0ebf220c-a75a-4570-9689-cde67ff83028.png)
+
+文章页
+
+![image](https://user-images.githubusercontent.com/61044187/138913188-0e937321-fdc7-4c40-b7a6-a57ecc855bf3.png)
+
+侧栏导航
+
+![image](https://user-images.githubusercontent.com/61044187/138913425-5d051b7f-16b0-4796-ba34-a9986ce272cb.png)
+
+评论区（疯狂推荐 Twikoo）
+
+![image](https://user-images.githubusercontent.com/61044187/138913553-10de85ed-fa31-4b0a-abb5-f0fe88d62861.png)
+
+作者页
+
+![image](https://user-images.githubusercontent.com/61044187/138913715-c7c28e0c-9cea-4c9a-af00-428981f3b68b.png)
+
+搜索弹窗
+
+![image](https://user-images.githubusercontent.com/61044187/138914008-79ba6571-3c9a-4f39-ae76-782158181adb.png)
